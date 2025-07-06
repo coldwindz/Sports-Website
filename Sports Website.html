@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/Admin/Documents/sports.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Sports Website</title>
+<style>
+  /* Reset & base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: #003366;
+    color: #e0e0e0;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  nav {
+    background: #00509e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav button {
+    background: transparent;
+    border: none;
+    color: #e0e0e0;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    flex: 1 1 20%;
+    max-width: 120px;
+  }
+
+  nav button:hover,
+  nav button.active {
+    background-color: #e0e0e0;
+    color: #003366;
+    border-radius: 4px;
+  }
+
+  main {
+    flex-grow: 1;
+    padding: 1rem 1.5rem;
+    background: white;
+    max-width: 600px;
+    margin: 1rem auto 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  section {
+    display: none;
+  }
+  section.active {
+    display: block;
+  }
+
+  h2 {
+    color: #00509e;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem 1rem;
+    background: #003366;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Responsive for mobile small height and width */
+  @media (max-width: 360px) {
+    nav button {
+      flex: 1 1 45%;
+      max-width: none;
+      font-size: 0.8rem;
+      padding: 0.5rem 0.7rem;
+    }
+    main {
+      margin: 0.7rem 0.5rem 1.5rem 0.5rem;
+      padding: 1rem 1rem;
+    }
+  }
+
+</style>
+</head>
+<body>
+<header>All About Sports</header>
+<nav aria-label="Primary navigation">
+  <button class="active" data-page="football">Football</button>
+  <button data-page="basketball" class="">Basketball</button>
+  <button data-page="tennis" class="">Tennis</button>
+  <button data-page="cricket" class="">Cricket</button>
+  <button data-page="olympics" class="">Olympics</button>
+  <button data-page="athletics">Athletics</button>
+  <button data-page="swimming">Swimming</button>
+  <button data-page="gymnastics">Gymnastics</button>
+  <button data-page="baseball">Baseball</button>
+  <button data-page="news">Sports News</button>
+</nav>
+<main>
+  <section id="football" class="active" aria-label="Football section" tabindex="0">
+    <h2>Football</h2>
+    <p>Football, or soccer as it is known in some countries, is the world's most widely followed sport, loved by billions. Played between two teams of eleven players each, the objective is to get the ball into the opponent's net using any body part except hands and arms.</p>
+    <p>The sport encompasses a range of leagues worldwide, from local clubs to internationally broadcast events. The annual UEFA Champions League and the FIFA World Cup, held every four years, are among the most prestigious competitions, drawing huge global audiences and inspiring generations of fans and players alike.</p>
+    <p>Football fosters teamwork, agility, and strategy. From young kids honing their skills in parks to professional athletes in packed stadiums, this sport unites communities and cultures worldwide.</p>
+  </section>
+
+  <section id="basketball" aria-label="Basketball section" tabindex="0" class="">
+    <h2>Basketball</h2>
+    <p>Basketball is a dynamic fast-paced sport played by two teams of five players each. The goal is to score points by shooting the ball through the opposing team's hoop elevated 10 feet off the ground.</p>
+    <p>The sport emphasizes speed, coordination, and precision. The National Basketball Association (NBA) stands as the pinnacle of professional basketball, featuring remarkable talent and high-intensity games attracting millions worldwide.</p>
+    <p>Basketball's global popularity continues to soar, with grassroots leagues thriving in numerous countries and international competitions like the FIBA World Cup bringing nations together through sport.</p>
+  </section>
+
+  <section id="tennis" aria-label="Tennis section" tabindex="0" class="">
+    <h2>Tennis</h2>
+    <p>Tennis is a thrilling sport played across singles or doubles format on a rectangular court. Players use rackets to hit a felt-covered rubber ball over a net, aiming to outscore their opponent in rallies and sets.</p>
+    <p>Grand Slam tournaments—Wimbledon, the US Open, the French Open, and the Australian Open—are pinnacle events that test the finest skills and mental stamina of tennis professionals worldwide.</p>
+    <p>This sport combines agility, strategy, and endurance to deliver exciting matches watched avidly by fans globally.</p>
+  </section>
+
+  <section id="cricket" aria-label="Cricket section" tabindex="0" class="">
+    <h2>Cricket</h2>
+    <p>Cricket is a bat-and-ball game with deep roots in several nations, notably England, India, Australia, and Pakistan. Played between two teams of eleven players each, the game challenges participants in formats ranging from fast-paced T20 matches to strategic five-day test cricket.</p>
+    <p>The sport commands immense passion, especially during events like the ICC World Cup. Players display remarkable skill in batting, bowling, and fielding, continually pushing the boundaries of athletic excellence.</p>
+    <p>Beyond the competitive realm, cricket plays an integral role in cultural identity and social cohesion wherever it is played.</p>
+  </section>
+
+  <section id="olympics" aria-label="Olympics section" tabindex="0" class="">
+    <h2>Olympics</h2>
+    <p>The Olympic Games represent the zenith of international competitive sporting events, showcasing the world's best athletes across summer and winter disciplines every four years.</p>
+    <p>Fostering a spirit of unity and peaceful competition, the Olympics include a vast array of sports such as athletics, swimming, gymnastics, skiing, and more.</p>
+    <p>Hosting the Games is a global honor, uniting diverse cultures under the banner of excellence, sportsmanship, and mutual respect.</p>
+  </section>
+
+  <section id="athletics" aria-label="Athletics section" tabindex="0">
+    <h2>Athletics</h2>
+    <p>Athletics encompasses a broad variety of track and field events including sprints, middle and long-distance running, hurdles, jumping, and throwing events.</p>
+    <p>It builds endurance, speed, and explosive strength while showcasing the human body's capabilities. Core to the Olympic Games and other championships, athletics is the foundation of many sports.</p>
+    <p>Thousands of athletes worldwide participate in competitions at local, national, and international levels.</p>
+  </section>
+
+  <section id="swimming" aria-label="Swimming section" tabindex="0">
+    <h2>Swimming</h2>
+    <p>Swimming, a water sport with a rich history, challenges competitors to race using various strokes including freestyle, butterfly, backstroke, and breaststroke.</p>
+    <p>Beyond competition, swimming is vital for fitness and lifesaving skills. Indoor and outdoor pools host thrilling contests during international championships and Olympic events.</p>
+    <p>The sport demands technique, breath control, endurance, and power.</p>
+  </section>
+
+  <section id="gymnastics" aria-label="Gymnastics section" tabindex="0">
+    <h2>Gymnastics</h2>
+    <p>Gymnastics tests physical strength, grace, flexibility, and coordination across multiple apparatus such as the balance beam, rings, vault, and floor exercises.</p>
+    <p>It combines artistic expression with athletic prowess, producing captivating performances admired worldwide.</p>
+    <p>Gymnastics has been a team and individual staple at the Olympics, inspiring countless young gymnasts around the globe.</p>
+  </section>
+
+  <section id="baseball" aria-label="Baseball section" tabindex="0">
+    <h2>Baseball</h2>
+    <p>Baseball is a bat-and-ball sport enjoyed worldwide, especially in North America, Japan, and Latin America. The game features two teams of nine players taking turns batting and fielding with a goal of scoring runs.</p>
+    <p>Known as America’s pastime, the sport demands precision hitting, strategic pitching, and agile defense.</p>
+    <p>Major League Baseball (MLB) is one of the top professional leagues captivating millions of fans every season.</p>
+  </section>
+
+  <section id="news" aria-label="Sports News section" tabindex="0">
+    <h2>Sports News</h2>
+    <p>Stay updated with the latest in the world of sports — from thrilling game results to player transfers and upcoming tournaments.</p>
+    <p>Sports news covers every discipline, delivering insights, interviews, expert analysis, and behind-the-scenes stories that bring fans closer to the game.</p>
+    <p>Whether it's breaking records, inspiring comebacks, or new rising stars, the world of sports news keeps enthusiasts connected and informed.</p>
+  </section>
+</main>
+<footer>© 2024 Sports Website | Crafted with passion for sports enthusiasts</footer>
+
+<script>
+  const buttons = document.querySelectorAll('nav button');
+  const sections = document.querySelectorAll('main section');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active from all buttons and sections
+      buttons.forEach(b => b.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+
+      // Add active to clicked button
+      btn.classList.add('active');
+      const page = btn.getAttribute('data-page');
+      const sectionToShow = document.getElementById(page);
+      sectionToShow.classList.add('active');
+
+      // Focus main for accessibility
+      sectionToShow.focus();
+    });
+  });
+</script>
+
+
+
+start sports_website.html</body></html>
